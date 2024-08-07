@@ -1,0 +1,237 @@
+
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:white;
+    
+}
+
+html,
+body{
+    height: 100%;
+    width: 100%;
+   
+}
+
+nav{
+    position :fixed;
+    /* background-color: rgb(0, 255, 47); */
+    display: flex;
+    align-items: flex-start;
+    background-color:#111;
+    height: 12vh;
+    width: 100%;
+    padding: 2vw 10.4vw;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+nav h1{
+    font-size: 1.6vw;
+}
+
+.nav-part2{
+    display: flex;
+    gap: 2vw;
+    align-items: flex-start;
+    padding: 1vh 0;
+    position: relative;
+    z-index: 10;
+}
+
+nav:hover #nav-bottom{
+    height: 150%;
+    bottom: -150% ;
+    background-color: #111;
+}
+
+.nav-part2 h4{
+    font-size: 0.73vw;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 2.6vw;
+
+}
+
+.nav-part2 h5{
+    margin-bottom: 1vw;
+   /* background-color: red; */
+   display: none;
+   overflow: hidden ;
+}
+.nav-part2 h5 span{
+    font-size: 0.77vw;
+    font-weight: 400;
+    display: inline-block;
+    
+
+}
+
+
+
+.bottom-div{
+    margin-top: 2vw;
+}
+
+.bottom-div h5{
+    /* background-color: red; */
+    overflow: hidden;
+    margin-bottom: 0.4vw;
+}
+
+.bottom-div h5 span{
+    font-weight: 500;
+    display:inline-block;
+    font-size: 0.75vw;
+    opacity: 0;
+}
+
+nav button{
+    background-color: #0BA34E;
+    display: flex;
+    align-items: center;
+    padding: 12px 14px;
+    font-size: 0.85vw ;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 50px;
+    border: none;
+}
+
+#nav-bottom{
+    width : 79%;
+    height: 0vh;
+    position: absolute;
+    /* background-color: red; */
+    top:100%;
+    background-color: #111;
+    z-index: 9;
+    border-bottom: 1px solid #fff;
+}   
+
+nav button svg{
+    height: 0.85vw;
+    margin-left: 1.65vw;
+}
+
+
+#page1{
+    height: 100vh;
+    width: 100%;
+    background-color: #111;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#page1 h1{
+    font-size: 8.5vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height:  8.5vw;
+
+}
+
+#page1 h1 svg{
+    height: 6vw;
+    border-radius: 50%;
+    width: 6vw;
+    background-color: #0BA34E;
+    
+}
+
+#page1 p{
+    text-align: center;
+    font-weight: 400;
+    margin-top: 3vh;
+}
+
+#page1-something{
+   
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page1-something h4{
+    font-weight : 400;
+    font-size: 1vw;
+    text-transform: lowercase;
+    margin-top: 0.5vw;
+    padding: 5px 12px;
+    border: 1px solid #a5a5a5;
+    border-radius: 50px;
+
+}
+
+#page1-something h4:nth-last-child(2)
+{
+    border: none;
+    padding: 2px;
+}
+
+#moving-div{
+    /* background-color: red; */
+    margin-top: 10vh;
+    position: absolute;
+    bottom:3%;
+    white-space:nowrap;
+    padding: 1.2vw;
+    overflow: hidden;
+    width: 44%;
+}
+
+#moving-div .move{
+    display: inline-block;
+    animation-name: mobe;
+    animation-duration: 9s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#moving-div .move img{
+    height: 1vw;
+    margin: 0 1.2vw;
+}
+
+@keyframes mobe {
+    0%{
+        transform : translateX(0);
+    }
+    100%
+    {
+        transform : translateX(-100%);
+    }
+}
+
+#blur-left{
+    height:100%;
+    width:20%;
+    background: linear-gradient(to right,#0BA34E,transparent);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+
+#blur-right{
+    height:100%;
+    width:20%;
+    background: linear-gradient(to right,transparent,#0BA34E);
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+}
+
+
+#page2{
+    height: 100vh;
+    width: 100%;
+
+    background-color: #111;
+}

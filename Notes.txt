@@ -1,0 +1,22 @@
+Box-sizing : 
+The CSS box-sizing property allows us to include the padding and border in an element's total width and height.
+
+width + padding + border = actual width of an element
+height + padding + border = actual height of an element
+
+vh : viewport height--->total screen ki height
+vw : The vw unit in CSS stands for "viewport width." It is a relative unit of measurement that is based on the width of the viewport. One vw is equal to 1% of the width of the viewport. This unit is particularly useful for responsive design, as it allows elements to scale relative to the size of the browser window or device screen.
+
+opacity:The opacity property specifies the opacity/transparency of an element.
+        The opacity property can take a value from 0.0 - 1.0. The lower the value, the more transparent:
+gsap:
+timeline: code ko synchronous kar deta HE yane ek ek kar ke chalega
+OVERFLOW : hidden;
+z-index
+positions
+stagger
+
+white-space:nowrap;
+display: inline-block;
+
+y:20 // y-axis
