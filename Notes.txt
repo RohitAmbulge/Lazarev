@@ -15,8 +15,35 @@ OVERFLOW : hidden;
 z-index
 positions
 stagger
-
+animation-duration
+animation-timing-function
+animation-iteration-count
+object-fit
+x:dets.x-elem.getBoundingClientRect().x-50
+y:dets.y-elem.getBoundingClientRect().y-150
+transition:all ease 0.5s
+transform: translateY(10%)
+transform: scaleX(0.7) scaleY(0)
+ transition: all ease 0.5s
 white-space:nowrap;
 display: inline-block;
+object-fit: cover;
 
+
+---------->
+gsap - for moving animations
+scrollTrigger - to make animations at the time of scrolling
+locomotiveJs - to make scrolling smooth
 y:20 // y-axis
+
+background-size: cover;
+ transform:translateY(0%);
+ object-fit: cover;
+transform: scaleX(0.7) scaleY(0.2);
+z-index
+transition:opacity ease 0.1s;
+
+
+gsap cdn
+locomotive js cdn
+locomotive scrolltrigger codepen
